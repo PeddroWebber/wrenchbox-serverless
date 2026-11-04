@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ConnectionStrings__Customers": "Host=localhost;Port=5432;Database=wrenchbox;Username=wrenchbox_auth;Password=change-me",
+    "Jwt__Secret": "WrenchBox_Dev_Secret_Key_Min_32_Chars!",
+    "Jwt__Issuer": "WrenchBox",
+    "Jwt__Audience": "WrenchBox.Admin",
+    "Jwt__CustomerExpiryMinutes": "30",
+    "Notify__Key": "local-notify-key",
+    "Smtp__Host": "localhost",
+    "Smtp__Port": "1025",
+    "Smtp__From": "WrenchBox <noreply@wrenchbox.local>",
+    "Smtp__UseSsl": "false"
+  }
+}

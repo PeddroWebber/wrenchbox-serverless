@@ -1,0 +1,10 @@
+bin/
+obj/
+local.settings.json
+.vs/
+.idea/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
