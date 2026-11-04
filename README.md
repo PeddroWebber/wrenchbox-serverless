@@ -50,7 +50,7 @@ A collection e o Swagger da API estão no repositório da aplicação: `docs/Wre
 1. O repositório do banco precisa existir antes (`rg-wrenchbox` e o Key Vault).
 2. `terraform -chdir=infra init` e `terraform -chdir=infra apply -var key_vault_name=...`
 3. Copie os outputs `function_names` para as variáveis `FUNCTION_APP_HOMOLOG` e `FUNCTION_APP_PROD`.
-4. Push em `homolog` publica na função de homologação. Push em `main` publica em produção. As duas branches ficam protegidas e só recebem merge por pull request.
+4. Push em `homolog` publica na função de homologação. Push em `main` publica em produção. Sem os segredos OIDC e o nome da função, o job avisa e segue, em vez de falhar no login. As duas branches ficam protegidas e só recebem merge por pull request.
 
 Segredos do workflow: `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_SUBSCRIPTION_ID`.
 
